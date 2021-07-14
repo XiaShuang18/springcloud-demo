@@ -7,6 +7,7 @@
     <modules>
         <module>eureka-nacos-server</module>
         <module>product-data-service</module>
+        <module>product-view-service-ribbon</module>
     </modules>
 
     <name>springcloud-parent</name>
