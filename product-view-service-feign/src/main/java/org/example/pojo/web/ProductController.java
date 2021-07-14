@@ -1,7 +1,7 @@
 package org.example.pojo.web;
 import java.util.List;
 
-import org.example.pojo.Product;
+import org.example.pojo.pojo.Product;
 import org.example.pojo.service.ProductService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;

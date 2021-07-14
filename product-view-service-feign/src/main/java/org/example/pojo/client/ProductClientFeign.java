@@ -2,7 +2,7 @@ package org.example.pojo.client;
  
 import java.util.List;
 
-import org.example.pojo.Product;
+import org.example.pojo.pojo.Product;
 import org.springframework.cloud.openfeign.FeignClient;
 import org.springframework.web.bind.annotation.GetMapping;
  
