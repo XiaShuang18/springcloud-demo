@@ -10,6 +10,7 @@
         <module>product-view-service-ribbon</module>
         <module>product-view-service-feign</module>
         <module>common-dep</module>
+        <module>brand-data-service</module>
     </modules>
 
     <name>springcloud-parent</name>
