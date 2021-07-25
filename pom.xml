@@ -18,7 +18,7 @@
     <description>springcloud</description>
     <packaging>pom</packaging>
 
-<!--父工程是一个springboot工程-->
+<!-- fixme 父工程是一个springboot工程  在聚合pom这个应该可以删除的-->
     <parent>
         <groupId>org.springframework.boot</groupId>
         <artifactId>spring-boot-starter-parent</artifactId>
@@ -34,6 +34,9 @@
     </properties>
 <!--公共依赖-->
     <dependencies>
+<!--        这种依赖 应该放在公共依赖模块，
+            因为有的视图微服务 配置微服务不会用到这个，
+            但是依赖了父工程  依赖会传递下去，造成不同模块不一样的版本-->
 <!--        <dependency>-->
 <!--            <groupId>mysql</groupId>-->
 <!--            <artifactId>mysql-connector-java</artifactId>-->
@@ -50,7 +53,14 @@
             <version>4.3.1</version>
         </dependency>
     </dependencies>
-
+<!--如果，没有这个地方的东西，之前看面 就是一个单纯的springboot父子工程，就像当时分SSM工程一样
+domain放一层  service  dao  controller  util 各放一层解耦
+一旦有这个spring-cloud版本之后，就是一个微服务springCloud工程了。
+以后自己搭建springCloud的 父工程的时候，只需要明确：
+        springboot-parent工程的版本
+        spring-cloud。version  然后就不用担心版本不一致的问题了。
+        再回去看gulimall商城  你会发现很简单了，手动搭建也没有那么麻烦了，或者直接copy代码过来也可以
+-->
     <dependencyManagement>
         <dependencies>
             <dependency>
