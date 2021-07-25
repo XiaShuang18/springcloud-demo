@@ -1,5 +1,4 @@
 <!DOCTYPE HTML>
-<!-- attention here  the xml -->
 <html xmlns:th="http://www.thymeleaf.org">
 <head>
     <title>products</title>
@@ -34,13 +33,13 @@
             <td th:text="${p.name}"></td>
             <td th:text="${p.price}"></td>
         </tr>
-<!--        TODO you can delete these code -->
-        <tr th:each="product_one: ${my_products}">
-            <td th:text="${product_one.getId()}"></td>
-            <td th:text="${product_one.getName()}+'the Port Will Change'"></td>
-            <td th:text="${product_one.getPrice()*100}"></td>
-        </tr>
         </tbody>
+        <tr>
+<!--            添加一行 这一行表格专门显示版本的 css-->
+            <td align="center" colspan="3" bgcolor="gray">
+                <p th:text="${version}" >how2j springcloud version unknown</p>
+            </td>
+        </tr>
     </table>
 </div>
 
