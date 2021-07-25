@@ -11,6 +11,7 @@
         <module>product-view-service-feign</module>
         <module>common-dep</module>
         <module>brand-data-service</module>
+        <module>config-server-git</module>
     </modules>
 
     <name>springcloud-parent</name>

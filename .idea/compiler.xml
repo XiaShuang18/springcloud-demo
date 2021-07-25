@@ -8,11 +8,12 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="common-dep" />
-        <module name="eureka-nacos-server" />
-        <module name="product-data-service" />
         <module name="product-view-service-ribbon" />
         <module name="product-view-service-feign" />
         <module name="brand-data-service" />
+        <module name="config-server-git" />
+        <module name="eureka-nacos-server" />
+        <module name="product-data-service" />
       </profile>
     </annotationProcessing>
   </component>
@@ -20,6 +21,7 @@
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
       <module name="brand-data-service" options="-parameters" />
       <module name="common-dep" options="-parameters" />
+      <module name="config-server-git" options="-parameters" />
       <module name="eureka-nacos-server" options="-parameters" />
       <module name="product-data-service" options="-parameters" />
       <module name="product-view-service-feign" options="-parameters" />

@@ -7,3 +7,6 @@ eureka:
   client:
     serviceURL:
       defaultZone: http://localhost:8761/eureka/
+
+#      品牌微服务应该获取的是来自MySQL数据库的文件，
+#      无论使用Mybatis还是JPA都应该导入MySQL的jar
